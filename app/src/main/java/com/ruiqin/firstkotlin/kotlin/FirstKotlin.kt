@@ -5,10 +5,10 @@ private val number2 = 2
 /*
 操作符
  */
-var a: Int = 4
-val b: Int = 1
-var shl: Int = a shl b
-var shr: Int = a shr b
+private var a: Int = 4
+private val b: Int = 1
+private var shl: Int = a shl b
+private var shr: Int = a shr b
 
 /*
 声明数组
@@ -17,6 +17,7 @@ private val intArray: IntArray = intArrayOf(12, 2, 5)
 private val sArray: Array<String> = Array<String>(3, { i -> i.toString() })
 private val anyArray: Array<Any> = arrayOf(123, 1, "a")
 private val longArray: LongArray = longArrayOf(1L, 2L, 3L)
+
 
 fun main(args: Array<String>) {
     println("$number1 和$number2 的最大值${max2(number1, number2)}")
@@ -40,7 +41,7 @@ fun main(args: Array<String>) {
 /*
 遍历数组
  */
-fun forLoop(array: Array<String>) {
+private fun forLoop(array: Array<String>) {
 
     //第一种方式直接输出字符(类似java foreach)
     println("第一种方法-----------------------")
